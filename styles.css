@@ -1,0 +1,98 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background:#131b2e;
+
+}
+
+.boas-vindas{
+  margin-left: 40%;
+  margin-right: 50%;
+  width: 2100px;
+  height: 420;
+  border: 20px solid #2e395e;
+  background:  #152885;
+  border-radius: 40px;
+
+}
+.aviso{
+
+  background:#6b82cf;
+  height: 290px;
+  width: 1580;
+  border: 18px solid #182257;
+  border-radius: 30px;
+
+}
+
+.text{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.memory-game  {
+  margin-left: 45%;
+  margin-right: 50%;
+  margin-top: 5%;
+  min-width: 1320;
+  min-height: 1410px;
+  display: flex;
+  border: 20px solid #6D8BD1;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  background: #A8B4ED;
+}
+
+.memory-card {
+  width: 350;
+  height: 350;
+  margin: 24px;
+  display: flex;
+  position: relative;
+  transform:scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.memory-card:active{
+  transform: scale(.97);
+  transition: transform .3s;
+
+}
+
+.memory-card.flip{
+  transform: rotateY(180deg);
+
+}
+
+.front-face,
+.back-face  {
+  margin-left: 0%;
+  margin-right: 0%;
+  width: calc(100% );
+  height: calc(100% );
+  display: flex;
+  padding: 5px;
+  position: absolute;
+  border-radius: 20px;
+  border: 16px solid #131B2E;
+  backface-visibility: hidden;
+
+}
+
+.front-face {
+  transform: rotateY(180deg);
+
+
+}
