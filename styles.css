@@ -12,27 +12,27 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  background:#131b2e;
+  background:#131317;
 
 }
 
 .boas-vindas{
-  margin-left: 40%;
+  margin-left: 44%;
   margin-right: 50%;
-  width: 2100px;
+  width: 1280px;
   height: 420;
-  border: 20px solid #2e395e;
-  background:  #152885;
+  border: 14px solid #e00052;
+  background:  #1c1c24;
   border-radius: 40px;
 
 }
 .aviso{
 
-  background:#6b82cf;
-  height: 290px;
-  width: 1580;
-  border: 18px solid #182257;
-  border-radius: 30px;
+
+  height: 150px;
+  width: 1180;
+  background:  #272733;
+
 
 }
 
@@ -40,23 +40,44 @@ body {
   margin-left: 2%;
   margin-right: 2%;
 }
+.button{
+  height: 10%;
+  width: 10%;
+}
+.botão{
+  height: 200px;
+  width: 200px;
+  margin-left: 90%;
+  margin-top: 2%;
+  background: red;
+}
+
+.botão:active{
+  transform: scale(.80);
+  transition: transform .3s;
+
+
+}
+
 .memory-game  {
   margin-left: 45%;
   margin-right: 50%;
   margin-top: 5%;
-  min-width: 1320;
-  min-height: 1410px;
+  min-width: 1180;
+  min-height: 1320px;
   display: flex;
-  border: 20px solid #6D8BD1;
+  border: 12px solid linear-gradient(44deg, #ff0055, #6a00ff, #6a00ff) ;
   border-radius: 20px;
   flex-wrap: wrap;
   perspective: 1000px;
-  background: #A8B4ED;
+  background: linear-gradient(44deg, #00d9ff,  #6a00ff)
 }
 
 .memory-card {
-  width: 350;
-  height: 350;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 320;
+  height: 320;
   margin: 24px;
   display: flex;
   position: relative;
@@ -78,21 +99,22 @@ body {
 
 .front-face,
 .back-face  {
-  margin-left: 0%;
-  margin-right: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
   width: calc(100% );
   height: calc(100% );
   display: flex;
   padding: 5px;
   position: absolute;
-  border-radius: 20px;
-  border: 16px solid #131B2E;
+  border-radius: 16px;
+  padding: 4px;
+  border: 14px solid #183a7a;
   backface-visibility: hidden;
 
 }
 
 .front-face {
   transform: rotateY(180deg);
-
-
+  margin-left: -10%;
+  margin-right: -10%;
 }
